@@ -4,10 +4,8 @@ import joblib
 
 
 # Load model dan label encoder
-model_path = 'random_forest_model.pkl'
-encoder_path = 'label_encoder_RFC.pkl'
-model = joblib.load('../Modeling Supervised/random_forest_model.pkl')
-label_encoder = joblib.load('../Modeling Supervised/label_encoder_RFC.pkl')
+model = joblib.load('random_forest_model.pkl')
+label_encoder = joblib.load('label_encoder_RFC.pkl')
 
 # Konfigurasi halaman Streamlit
 st.set_page_config(page_title="Prediksi algoritma RF", layout="centered")
